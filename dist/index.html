@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Shenanigans | Give us a spin</title>
   <meta name="description" content="Meet Shenanigans. Give us a spin, find upcoming gigs and get in touch.">
+  <link rel="icon" type="image/svg+xml" href="assets/plectrum.svg">
+  <meta name="theme-color" content="#1b2b2b">
   <link rel="preload" href="assets/approved-mockup.png" as="image">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <svg class="filter-definitions" aria-hidden="true"><defs>
@@ -21,7 +23,8 @@
   <div class="site"><div class="page">
     <header class="masthead">
       <a class="brand" href="#hear" aria-label="Shenanigans home">
-        <svg viewBox="70 19 135 36" aria-hidden="true"><image href="assets/approved-mockup.png" width="1536" height="1024" filter="url(#printed-ink)"/></svg>
+        <img class="brand-pick" src="assets/plectrum.svg" alt="" width="38" height="40">
+        <svg class="brand-wordmark" viewBox="70 19 135 36" aria-hidden="true"><image href="assets/approved-mockup.png" width="1536" height="1024" filter="url(#printed-ink)"/></svg>
       </a>
       <nav aria-label="Main navigation">
         <a href="#hear">Hear us</a><a href="#gig-details" data-panel="gig-details">Gigs</a><a href="#band" data-panel="band">The band</a><a href="#booking-details" data-panel="booking-details">Book us</a>
@@ -31,7 +34,7 @@
     <main>
       <section class="hero" id="hear" aria-label="Hear Shenanigans">
         <div class="record-scene">
-          <div class="vinyl-shell" aria-hidden="true">
+          <div class="vinyl-shell" role="slider" tabindex="0" aria-label="Scratch the record" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-describedby="scratch-hint">
             <svg class="vinyl-projection" viewBox="0 0 1000 1000" preserveAspectRatio="none">
               <defs><clipPath id="record-circle"><circle cx="500" cy="497" r="479"/></clipPath></defs>
               <g id="vinyl" clip-path="url(#record-circle)">
@@ -53,6 +56,7 @@
             <svg viewBox="1109 118 283 261" aria-hidden="true"><image href="assets/approved-mockup.png" width="1536" height="1024" filter="url(#printed-ink)"/></svg>
           </h2>
           <p class="intro">A few samples. Turn it up.</p>
+          <p class="scratch-hint" id="scratch-hint">Grab the vinyl. Give it a scratch.<span class="sr-only"> Use left and right arrow keys to scrub, and Space to play or pause.</span></p>
           <div class="tracks" id="tracks" aria-label="Audio samples"></div>
           <p class="player-error" id="error" role="status" hidden></p>
           <div class="player-foot"><span>SAME NOISE<br>DIFFERENT DAY</span><span class="short-rule" aria-hidden="true"></span></div>
@@ -80,7 +84,7 @@
           <form class="contact-form" id="booking-form" action="https://formsubmit.co/jamesmarsland@gmail.com" method="POST" accept-charset="UTF-8">
             <input type="hidden" name="_subject" value="Shenanigans booking enquiry">
             <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_next" value="https://shenanigans-record-room.jamiemarsland1.chatgpt.site/?booking=submitted#booking-details">
+            <input type="hidden" name="_next" value="https://shenanigans.band/?booking=submitted#booking-details">
             <div class="form-honeypot" aria-hidden="true"><label for="contact-company">Leave this field empty</label><input id="contact-company" type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
             <div class="contact-fields">
               <div class="form-field"><label for="contact-name">Your name</label><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="120" required></div>
@@ -101,6 +105,6 @@
     </footer>
   </div></div>
   <audio id="audio" preload="metadata"></audio>
-  <script src="player.js?v=4"></script>
+  <script src="player.js?v=5"></script>
 </body>
 </html>
