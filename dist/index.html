@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shenanigans | Give us a spin</title>
+  <meta name="description" content="Meet Shenanigans. Give us a spin, find upcoming gigs and get in touch.">
+  <link rel="preload" href="assets/approved-mockup.png" as="image">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+  <svg class="filter-definitions" aria-hidden="true"><defs>
+    <filter id="printed-ink" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 -1.6 0 0 1.30"/>
+    </filter>
+    <filter id="cream-ink" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0 0 0 0 .92  0 0 0 0 .84  0 0 0 0 .68  0 3 0 0 -.98"/>
+    </filter>
+  </defs></svg>
+  <a class="skip-link" href="#hear">Skip to the audio player</a>
+  <div class="site"><div class="page">
+    <header class="masthead">
+      <a class="brand" href="#hear" aria-label="Shenanigans home">
+        <svg viewBox="70 19 135 36" aria-hidden="true"><image href="assets/approved-mockup.png" width="1536" height="1024" filter="url(#printed-ink)"/></svg>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#hear">Hear us</a><a href="#gig-details" data-panel="gig-details">Gigs</a><a href="#band" data-panel="band">The band</a><a href="#booking-details" data-panel="booking-details">Book us</a>
+      </nav>
+      <svg class="edition" viewBox="1448 29 46 123" aria-hidden="true"><image href="assets/approved-mockup.png" width="1536" height="1024" filter="url(#printed-ink)"/></svg>
+    </header>
+    <main>
+      <section class="hero" id="hear" aria-label="Hear Shenanigans">
+        <div class="record-scene">
+          <div class="vinyl-shell" aria-hidden="true">
+            <svg class="vinyl-projection" viewBox="0 0 1000 1000" preserveAspectRatio="none">
+              <defs><clipPath id="record-circle"><circle cx="500" cy="497" r="479"/></clipPath></defs>
+              <g id="vinyl" clip-path="url(#record-circle)">
+                <image href="assets/vinyl-record.png" width="1000" height="1000"/>
+                <circle cx="499" cy="492" r="18" fill="#191916"/>
+              </g>
+            </svg>
+          </div>
+          <article class="sleeve">
+            <h1 class="sr-only">Shenanigans</h1>
+            <svg class="sleeve-art" role="img" aria-label="A worn Shenanigans record sleeve featuring all four band members performing live" viewBox="30 50 1040 725">
+              <defs><clipPath id="sleeve-cut"><path d="M43 112 L714 56 L763 716 L91 760 Z"/></clipPath></defs>
+              <image href="assets/approved-mockup.png" width="1536" height="1024" clip-path="url(#sleeve-cut)"/>
+            </svg>
+          </article>
+        </div>
+        <div class="player">
+          <h2 class="spin-heading"><span class="sr-only">Give us a spin.</span>
+            <svg viewBox="1109 118 283 261" aria-hidden="true"><image href="assets/approved-mockup.png" width="1536" height="1024" filter="url(#printed-ink)"/></svg>
+          </h2>
+          <p class="intro">A few samples. Turn it up.</p>
+          <div class="tracks" id="tracks" aria-label="Audio samples"></div>
+          <p class="player-error" id="error" role="status" hidden></p>
+          <div class="player-foot"><span>SAME NOISE<br>DIFFERENT DAY</span><span class="short-rule" aria-hidden="true"></span></div>
+          <noscript><p>Listen to a sample:</p><audio controls src="assets/sample-1.wav"></audio></noscript>
+        </div>
+      </section>
+      <section class="bottom" aria-label="Gigs and bookings">
+        <div id="gigs" class="gig-panel">
+          <h2 class="gig-heading"><span class="sr-only">Live and loud</span><svg viewBox="70 817 376 120" aria-hidden="true"><image href="assets/approved-mockup.png" width="1536" height="1024" filter="url(#printed-ink)"/></svg></h2>
+          <div class="gig-cta"><p class="next-gig"><span class="gig-kicker">NEXT GIG</span><strong><time datetime="2026-11-20">20 NOVEMBER</time></strong><span>MyCoffee · Cheltenham</span></p><button class="outline" data-panel="gig-details">Gig details <span aria-hidden="true">→</span></button></div>
+        </div>
+        <div id="booking" class="booking-panel">
+          <svg class="megaphone" aria-hidden="true" viewBox="832 808 145 139"><image href="assets/approved-mockup.png" width="1536" height="1024" filter="url(#cream-ink)"/></svg>
+          <div class="booking-cta"><p>Got a date in mind?</p><button class="outline" data-panel="booking-details">Book Shenanigans <span aria-hidden="true">→</span></button></div>
+          <p class="booking-notes">BANDS<br>CLUBS<br>PUBS<br>FESTIVALS<br>LET’S MAKE<br>IT HAPPEN<span class="short-rule" aria-hidden="true"></span></p>
+        </div>
+      </section>
+      <section class="details gig-details" id="gig-details" hidden tabindex="-1" aria-labelledby="gig-title">
+        <div class="gig-date" aria-label="20 November 2026"><span>FRIDAY</span><strong>20</strong><span>NOVEMBER 2026</span></div>
+        <div><p class="eyebrow">NEXT UP / SHENANIGANS LIVE</p><h2 id="gig-title">MYCOFFEE</h2><p class="gig-address">Bath Road, Cheltenham</p><p><time datetime="2026-11-20">Friday 20 November 2026</time></p></div>
+      </section>
+      <section class="details booking-details" id="booking-details" hidden tabindex="-1" aria-labelledby="contact-title">
+        <div class="contact-intro"><p class="eyebrow">BOOK SHENANIGANS</p><h2 id="contact-title">LET’S MAKE<br>SOME NOISE.</h2><p>Got a gig, party or event in mind? Tell us a little about it.</p><p class="contact-direct">Or email <a href="mailto:jamesmarsland@gmail.com">jamesmarsland@gmail.com</a></p></div>
+        <div class="contact-content">
+          <form class="contact-form" id="booking-form" action="https://formsubmit.co/jamesmarsland@gmail.com" method="POST" accept-charset="UTF-8">
+            <input type="hidden" name="_subject" value="Shenanigans booking enquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://shenanigans-record-room.jamiemarsland1.chatgpt.site/?booking=submitted#booking-details">
+            <div class="form-honeypot" aria-hidden="true"><label for="contact-company">Leave this field empty</label><input id="contact-company" type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+            <div class="contact-fields">
+              <div class="form-field"><label for="contact-name">Your name</label><input id="contact-name" name="name" type="text" autocomplete="name" maxlength="120" required></div>
+              <div class="form-field"><label for="contact-email">Your email</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required></div>
+            </div>
+            <div class="form-field"><label for="contact-message">Your message</label><textarea id="contact-message" name="message" rows="5" maxlength="5000" required aria-describedby="message-hint"></textarea><p id="message-hint" class="field-hint">Include a date and venue if you have them.</p></div>
+            <div class="contact-send"><button class="outline send-button" type="submit">Send enquiry <span aria-hidden="true">→</span></button><p class="field-hint">Sent securely using <a href="https://formsubmit.co/" target="_blank" rel="noopener noreferrer">FormSubmit</a>.</p></div>
+          </form>
+          <div id="booking-success" class="booking-success" hidden role="status"><h3>THANKS FOR GETTING IN TOUCH.</h3><p>Your enquiry has been submitted. We’ll be in touch using the email you provided.</p><button class="outline" id="new-enquiry" type="button">Send another enquiry <span aria-hidden="true">→</span></button></div>
+        </div>
+      </section>
+      <section class="band-section" id="band" hidden tabindex="-1"><span class="eyebrow">THE BAND / LINER NOTES</span><h2>FOUR PEOPLE.<br>ONE GOOD NIGHT.</h2><p>We’re Shenanigans. Guitars, drums, vocals, and a love of playing live. Have a listen, then come and catch us at a gig.</p></section>
+    </main>
+    <footer>
+      <span>REAL MUSIC. REAL PLACES. STILL HERE.</span>
+      <a class="instagram-follow" href="https://www.instagram.com/we_are_shenanigans/" target="_blank" rel="noopener noreferrer">Follow us on Instagram <span aria-hidden="true">↗</span></a>
+      <details class="audio-settings"><summary>Sample audio</summary><div class="settings-inner"><p>Temporary demo instrumentals. Band recordings coming soon.</p><label for="volume">Volume</label><input id="volume" type="range" min="0" max="1" step="0.01" value="0.75"></div></details>
+    </footer>
+  </div></div>
+  <audio id="audio" preload="metadata"></audio>
+  <script src="player.js?v=4"></script>
+</body>
+</html>

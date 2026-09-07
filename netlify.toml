@@ -1,0 +1,3 @@
+# The complete static website is committed in dist. No build step is needed.
+[build]
+  publish = "dist"
