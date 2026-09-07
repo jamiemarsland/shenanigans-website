@@ -186,3 +186,14 @@ footer { display: flex; justify-content: space-between; gap: 25px; align-items: 
 .instagram-follow { font: 14px/1.5 Condensed,sans-serif; letter-spacing: .11em; text-transform: uppercase; border-bottom: 1px solid #968a73; padding-bottom: 2px; }
 .instagram-follow:hover { color: var(--red); border-color: var(--red); }
 @media(max-width:650px) { footer { flex-wrap:wrap; } footer>span { max-width:100%; width:100%; } .instagram-follow { order:1; } .audio-settings { order:2; margin-left:auto; } }
+
+/* Small plectrum signature using the supplied band artwork. */
+.brand { display: flex; align-items: center; gap: 10px; width: clamp(175px, 16vw, 230px); flex-shrink: 0; }
+.brand .brand-pick { width: 34px; height: 36px; object-fit: contain; border-radius: 8px; border-bottom: 2px solid #e97e3f; }
+.brand .brand-wordmark { flex: 1; min-width: 0; width: auto; }
+.masthead { min-height: 70px; }
+.scratch-hint { font: 14px/1.5 Condensed,sans-serif; letter-spacing: .06em; margin: -12px 0 16px; }
+.vinyl-shell { cursor: grab; touch-action: none; user-select: none; border-radius: 50%; }
+.vinyl-shell.scratching { cursor: grabbing; }
+.vinyl-shell:focus-visible { outline: 3px solid var(--red); outline-offset: 6px; }
+@media(max-width:900px) { .brand { width: 190px; } .scratch-hint { text-align: center; margin-top: -12px; } }
